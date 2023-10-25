@@ -1,51 +1,44 @@
+/* Your custom CSS code goes here */
 body {
-    margin: 0;
-    background: url('../banner.png') no-repeat center center fixed;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-image {
+  background-image: url('../banner.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .background-image {
+      background-size: cover;
   }
 
-  .form-container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
+  .login-form {
+      max-width: 90%;
+      padding: 15px; /* Increase the padding for mobile screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+      padding: 20px; /* Increase the padding further for smaller screens */
   }
 
-  form {
-    background: rgba(255,255,255,0.8);
-    padding: 30px;
-    padding-right: 45px;
-    border-radius: 10px;
-    max-width: 400px;  
+  .login-form input {
+      padding: 8px;
   }
-
-  h1 {
-    text-align: center;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px; 
-  }
-
-  input {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  button {
-    margin-top: 12px;
-    width: 108%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 5px;
-    opacity: 0.9;
-  } 
-
-  button:hover {
-    opacity: 1;
-  }
+}

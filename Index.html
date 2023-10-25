@@ -1,57 +1,29 @@
 <!DOCTYPE html>
-<html>
-
-<head>    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Login Page</title>
 </head>
-
 <body>
-
-  <div class="form-container">
-
-    <form>
-      <h1>Login</h1>
-      
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email">
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password">
-
-      <button type="submit">Login</button>
-
-    </form>
-
-  </div>
-  
-  <script>
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', (e) => {
-
-      const email = document.getElementById('email');
-      const password = document.getElementById('password').value;
-      
-      
-      var regExEmail = /^[A-Za-z0-9._%+-]+@northeastern\.edu$/;
-      if (!email.value.trim().match(regExEmail) || password != "Info6150") {
-        console.log("inside")
-        e.preventDefault();
-        alert('Invalid email or password');  
-      }
-      if (email.value.trim().match(regExEmail) && password=='Info6150'){
-        console.log('Correct')
-        setTimeout(() => {
-        window.location.href = 'http://127.0.0.1:5500/home.html';
-        }, 100);
-        alert('Valid Creds')
-        
-      }
-
-      
-
-    });
-  </script>
-
+    <div class="background-image d-flex justify-content-center align-items-center">
+        <div class="login-form p-4">
+            <h2 class="mb-4">Login</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name "password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/script.js"/>
 </body>
 </html>
