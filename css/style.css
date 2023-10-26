@@ -460,3 +460,28 @@ footer .copy-right_text .copy_right {
   display: flex;
   justify-content: center;
 }
+
+#collapseExample > a {
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+}
+
+#OffCanvasLink {
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.collapseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
