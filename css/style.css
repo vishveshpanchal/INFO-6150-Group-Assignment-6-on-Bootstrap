@@ -5,6 +5,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Satisfy", cursive;
+  color: #000000;
+}
+
 .background-image {
   background-image: url('../banner.png'); /* Replace with your image URL */
   background-size: cover;
