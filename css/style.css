@@ -304,7 +304,6 @@ img {
   text-align: center !important;
 }
 
-
 .bradcam_area {
   background-size: cover;
   background-position: bottom;
@@ -364,14 +363,14 @@ img {
   .recepie_area .single_recepie .recepie_thumb {
     width: 150px;
     height: 150px;
-}
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .recepie_area .single_recepie .recepie_thumb {
     width: 150px;
     height: 150px;
-}
+  }
 }
 
 .recepie_area .single_recepie .recepie_thumb img {
@@ -393,13 +392,13 @@ img {
   margin-bottom: 5px;
 }
 
-  .recepie_area .single_recepie p {
-    font-size: 14px;
-    color: #777777;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 31px;
-  }
+.recepie_area .single_recepie p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 31px;
+}
 
 .line_btn {
   display: inline-block;
@@ -414,9 +413,6 @@ img {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-
-
-
 
 /* Recipes */
 
@@ -604,4 +600,12 @@ footer .copy-right_text .copy_right {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+.cardsContainer {
+  padding-top: 25px;
+}
+
+.offcanvas-body > ol > li {
+  padding-top: 10px;
 }
