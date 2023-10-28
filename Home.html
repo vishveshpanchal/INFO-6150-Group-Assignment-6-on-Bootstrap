@@ -30,7 +30,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid nav-area">
           <a class="navbar-brand" href="#">Demo Name</a>
           <button
             class="navbar-toggler"
@@ -46,7 +46,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="Home.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -66,8 +68,16 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Recepie</a></li>
-                  <li><a class="dropdown-item" href="#">Blogs</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Chicken-Recipes.html"
+                      >Chicken Recepie</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Fruit-Salad-Recipes.html"
+                      >Fruit Salad Recepie</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -488,12 +498,12 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
-          <button
+          <!-- <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="3"
             aria-label="Slide 4"
-          ></button>
+          ></button> -->
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -508,12 +518,12 @@
               <h5>Special Pizza</h5>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img src="img/Dish4.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Noodles</h5>
             </div>
-          </div>
+          </div> -->
           <div class="carousel-item">
             <img src="img/Dish1.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
@@ -663,45 +673,45 @@
           </div>
           <div class="offcanvas-body">
             <ol>
-              <ul>
+              <li>
                 <strong>Seafood:</strong>
                 Boston is known for its fresh seafood, particularly lobster,
                 clam chowder, and various fish dishes. The proximity to the
                 Atlantic Ocean allows for easy access to high-quality seafood.
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <strong>History:</strong>
                 Boston has a rich culinary history, dating back to the colonial
                 period. The city's historical influence can be seen in
                 traditional New England dishes, such as baked beans and brown
                 bread.
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <strong>Ethnic Diversity:</strong>
                 Boston is a melting pot of cultures, and this diversity is
                 reflected in its food scene. You can find a wide range of
                 international cuisines, from Italian and Chinese to Ethiopian
                 and Vietnamese.
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <strong>Education:</strong>
                 Boston is home to several prestigious universities, which
                 contribute to a thriving and sophisticated dining scene.
                 Students and faculty from around the world bring diverse
                 culinary influences to the city.x
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <strong>Farm-to-Table Movement:</strong>
                 There's a growing emphasis on locally sourced and sustainable
                 food in Boston, with numerous restaurants and markets supporting
                 the farm-to-table movement.
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <strong>Culinary Innovation:</strong>
                 Boston's chefs and food entrepreneurs are known for their
                 creativity and innovation, continually pushing the boundaries of
                 culinary experiences.
-              </ul>
+              </li>
             </ol>
           </div>
         </div>
@@ -907,12 +917,36 @@
     </main>
     <!-- Feedback Area -->
 
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Welcome, Hitesh</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Welcome to our delectable world of culinary delights! <br />
+          Explore a treasure trove of mouthwatering recipes.
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
     <!-- Footer -->
     <footer class="footer">
       <div class="footer_top">
         <div class="container">
           <div class="row">
-            <div class="col-x-2 col-md-6 col-lg-2">
+            <div class="col-x-2 col-md-6 col-lg-3">
               <div class="footer_widget">
                 <h3 class="footer_title">Starters</h3>
                 <ul>
@@ -924,7 +958,7 @@
               </div>
             </div>
 
-            <div class="col-x-2 col-md-6 col-lg-2">
+            <div class="col-x-2 col-md-6 col-lg-3">
               <div class="footer_widget">
                 <h3 class="footer_title">Main Course</h3>
                 <ul>
@@ -936,7 +970,7 @@
               </div>
             </div>
 
-            <div class="col-x-2 col-md-6 col-lg-2">
+            <div class="col-x-2 col-md-6 col-lg-3">
               <div class="footer_widget">
                 <h3 class="footer_title">Desserts</h3>
                 <ul>
@@ -948,7 +982,7 @@
               </div>
             </div>
 
-            <div class="col-x-2 col-md-6 col-lg-2">
+            <div class="col-x-2 col-md-6 col-lg-3">
               <div class="footer_widget">
                 <h3 class="footer_title">Juices & Shakes</h3>
                 <ul>
@@ -995,6 +1029,17 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      window.onload = (event) => {
+        let myAlert = document.getElementById("liveToast");
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+        setTimeout(() => {
+          bsAlert.hide();
+        }, 5000);
+      };
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
