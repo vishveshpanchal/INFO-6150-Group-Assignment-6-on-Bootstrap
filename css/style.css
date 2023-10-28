@@ -485,3 +485,66 @@ footer .copy-right_text .copy_right {
   align-items: center;
   margin: 10px;
 }
+
+
+#feedbackForm {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#feedbackForm label{
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: 5px 30px;
+  opacity: 70%;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+
+#feedbackForm label div input{
+  width: 100%;
+}
+
+#feedbackForm div button{
+  opacity: 80%;
+}
+
+#spinnerFeedback{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    background-size: 100%;
+    transform: scale(2);
+    display: none;
+}
+
+.input-group-text{
+  background-color: black;
+  border: 0px black;
+  color: white;
+  font-weight: bold;
+}
+
+#alertFeedback{
+  display: flex;
+  display: none;
+  background-color: rgb(3, 167, 3);
+  opacity: 80%;
+  font-style: italic;
+  color: white;
+}
+
+#customRange3 {
+  width: 89%;
+}
+
+#textInputRange{
+  width: 10%;
+}
