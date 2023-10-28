@@ -13,11 +13,1072 @@
       crossorigin="anonymous"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" /> -->
 
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid nav-area">
+          <a class="navbar-brand" href="#">reSSSPes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Home Page"
+              >
+                <a class="nav-link active" aria-current="page" href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To About Page"
+              >
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Recepies Page"
+              >
+                <a class="nav-link" href="#">Recepie</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Chicken Recepie Page"
+                  >
+                    <a class="dropdown-item" href="Chicken-Recipes.html"
+                      >Chicken Recepie</a
+                    >
+                  </li>
+
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Fruit Salad Recepie Page"
+                  >
+                    <a class="dropdown-item" href="Fruit-Salad-Recipes.html"
+                      >Fruit Salad Recepie</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Feedback Page"
+              >
+                <a class="nav-link" href="feedbackForm.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Search Within Document"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="Modal1"
+        tabindex="-1"
+        aria-labelledby="Pav Bhaji"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Paj Bhaji</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="imageModal">
+                <img src="img/pavBhaji.jpg" alt="Pav Bhaji" />
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Recepie
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>
+                            1. Boil and mash mixed vegetables (potatoes, peas,
+                            cauliflower, and capsicum).
+                          </li>
+                          <li>
+                            2. In a pan, sauté onions, tomatoes, and garlic with
+                            pav bhaji masala.
+                          </li>
+                          <li>
+                            3. Add the mashed vegetables and cook until well
+                            combined.
+                          </li>
+                          <li>
+                            4. Toast pav (bread) with butter on a griddle until
+                            golden.
+                          </li>
+                          <li>
+                            5. Serve the bhaji with buttered pav, garnished with
+                            chopped onions and lemon wedges.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div
+        class="modal fade"
+        id="Modal2"
+        tabindex="-1"
+        aria-labelledby="Maharaja Lunch"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Maharaja Lunch</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="imageModal">
+                <img src="img/Maharja Lunch.jpg" alt="Maharaja Lunch" />
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Recepie
+                      </button>
+                    </h2>
+                    <!-- Accordion -->
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>
+                            1. Choose a variety of dishes: Select a range of
+                            dishes, including appetizers, mains, sides, and
+                            desserts, representing different cuisines and
+                            flavors.
+                          </li>
+                          <li>
+                            2. Plan the menu: Create a menu with a combination
+                            of vegetarian and non-vegetarian options to cater to
+                            various preferences.
+                          </li>
+                          <li>
+                            3. Presentation matters: Pay attention to the
+                            presentation of the dishes, using elegant serving
+                            platters and garnishes to make the meal visually
+                            appealing.
+                          </li>
+                          <li>
+                            4. Use high-quality ingredients: Opt for the
+                            best-quality ingredients and spices to enhance the
+                            flavors of your dishes.
+                          </li>
+                          <li>
+                            5. Serve with grandeur: Serve the meal in a grand
+                            and welcoming setting, using fine dining cutlery and
+                            offering a variety of beverages to complement the
+                            meal.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Collapse -->
+              <div class="collapseContainer">
+                <p>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    Want to learn more?
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <a href="https://maharajaboston.com/" target="”_blank”"
+                    >Learn more here by visiting us</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal3 -->
+      <div
+        class="modal fade"
+        id="Modal3"
+        tabindex="-1"
+        aria-labelledby="Paneer Tikka"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Paneer Tikka</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="imageModal">
+                <img src="img/pannerTikka.jpg" alt="Panner Tikka" />
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Recepie
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>
+                            1. Gather the following ingredients: paneer cubes,
+                            yogurt, gram flour (besan), ginger-garlic paste, red
+                            chili powder, turmeric, garam masala, lemon juice,
+                            and salt.
+                          </li>
+                          <li>
+                            2. In a bowl, mix yogurt, gram flour, ginger-garlic
+                            paste, red chili powder, turmeric, garam masala,
+                            lemon juice, and salt to make a smooth marinade.
+                          </li>
+                          <li>
+                            3. Dip the paneer cubes in the marinade, ensuring
+                            they are well coated, and let them marinate for at
+                            least 30 minutes..
+                          </li>
+                          <li>
+                            4. Thread the marinated paneer cubes onto skewers
+                            and grill them in an oven or on a barbecue until
+                            they are charred and cooked through.
+                          </li>
+                          <li>
+                            5. Serve the Paneer Tikka hot, garnished with lemon
+                            wedges and accompanied by mint chutney.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal4 -->
+      <div
+        class="modal fade"
+        id="Modal4"
+        tabindex="-1"
+        aria-labelledby="Vada Pav"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Vada Pav</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="imageModal">
+                <img src="img/vadaPav.jpg" alt="Vada Pav" />
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Recepie
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>
+                            1. Gather the following ingredients: pav (bread
+                            rolls), boiled and mashed potatoes, gram flour,
+                            green chilies, ginger, mustard seeds, curry leaves,
+                            turmeric, red chili powder, salt, and oil.
+                          </li>
+                          <li>
+                            2. In a pan, heat some oil, add mustard seeds, curry
+                            leaves, and chopped green chilies. Sauté for a
+                            minute, then add mashed potatoes, turmeric, red
+                            chili powder, and salt. Cook the potato mixture
+                            until it's well-spiced and aromatic.
+                          </li>
+                          <li>
+                            3. Shape the potato mixture into small round patties
+                            and set them aside.
+                          </li>
+                          <li>
+                            4. Mix gram flour with water, a pinch of salt, and a
+                            pinch of red chili powder to make a thick, smooth
+                            batter.
+                          </li>
+                          <li>
+                            5. Dip the potato patties in the gram flour batter
+                            and deep-fry until they're golden brown and crispy.
+                            Then, place the vada in a pav (bread roll) and serve
+                            it with chutney or garlic chutney on the side.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <!-- <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button> -->
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Dish5.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Indian Specials</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Dish2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Special Pizza</h5>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="img/Dish4.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Noodles</h5>
+            </div>
+          </div> -->
+          <div class="carousel-item">
+            <img src="img/Dish1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Burger</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Cards -->
+      <div class="cardsContainer">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/pavBhaji.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Pav Bhaji</h5>
+                <p class="card-text">
+                  Pav Bhaji is a flavorful Indian street food made of a spiced
+                  vegetable mash (bhaji) served with buttered buns (pav).
+                </p>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal1"
+                  class="btn btn-dark"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/Maharja Lunch.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Maharaja Lunch</h5>
+                <p class="card-text">
+                  A Maharaja Lunch typically refers to a lavish and royal Indian
+                  meal fit for royalty, featuring an array of rich and indulgent
+                  dishes.
+                </p>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal2"
+                  class="btn btn-dark"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/pannerTikka.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Panner Tikka</h5>
+                <p class="card-text">
+                  Paneer Tikka is a popular Indian appetizer made from marinated
+                  and grilled cubes of paneer, typically seasoned with spices
+                  and yogurt.
+                </p>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal3"
+                  class="btn btn-dark"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img/vadaPav.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Vada Pav</h5>
+                <p class="card-text">
+                  Vadapav is a popular Indian street food, often referred to as
+                  the "Indian burger," consisting of a spicy potato fritter
+                  (vada) served in a bun.
+                </p>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal4"
+                  class="btn btn-dark"
+                >
+                  View
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OffCanvas -->
+      <div class="offCanvasContainer">
+        <a
+          class=""
+          id="OffCanvasLink"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasScrolling"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          Why Boston has best Food?
+        </a>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              Why Boston has best Food?
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ol>
+              <li>
+                <strong>Seafood:</strong>
+                Boston is known for its fresh seafood, particularly lobster,
+                clam chowder, and various fish dishes. The proximity to the
+                Atlantic Ocean allows for easy access to high-quality seafood.
+              </li>
+              <li>
+                <strong>History:</strong>
+                Boston has a rich culinary history, dating back to the colonial
+                period. The city's historical influence can be seen in
+                traditional New England dishes, such as baked beans and brown
+                bread.
+              </li>
+              <li>
+                <strong>Ethnic Diversity:</strong>
+                Boston is a melting pot of cultures, and this diversity is
+                reflected in its food scene. You can find a wide range of
+                international cuisines, from Italian and Chinese to Ethiopian
+                and Vietnamese.
+              </li>
+              <li>
+                <strong>Education:</strong>
+                Boston is home to several prestigious universities, which
+                contribute to a thriving and sophisticated dining scene.
+                Students and faculty from around the world bring diverse
+                culinary influences to the city.x
+              </li>
+              <li>
+                <strong>Farm-to-Table Movement:</strong>
+                There's a growing emphasis on locally sourced and sustainable
+                food in Boston, with numerous restaurants and markets supporting
+                the farm-to-table movement.
+              </li>
+              <li>
+                <strong>Culinary Innovation:</strong>
+                Boston's chefs and food entrepreneurs are known for their
+                creativity and innovation, continually pushing the boundaries of
+                culinary experiences.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHETTY -->
+
+      <!-- Dish Area -->
+      <div class="dish_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="dish_wrap d-flex">
+                <div class="single_dish text-center">
+                  <div class="thumb">
+                    <img src="img/recipe_1.png" alt="" />
+                  </div>
+                  <h3>Sweets Recipes</h3>
+                  <p>
+                    Sweets are the delectable conclusion to a satisfying meal,
+                    designed to indulge the sweet tooth and offer a delightful
+                    symphony of flavors, textures, and visual appeal.
+                  </p>
+                </div>
+                <div class="single_dish text-center">
+                  <div class="thumb">
+                    <img src="img/recipe_2.png" alt="" />
+                  </div>
+                  <h3>Chicken Recipes</h3>
+                  <p>
+                    A chicken dish is a versatile and beloved component of
+                    cuisines worldwide, offering a wide array of preparations
+                    and flavors to satisfy diverse palates.
+                  </p>
+                </div>
+                <div class="single_dish text-center">
+                  <div class="thumb">
+                    <img src="img/recipe_3.png" alt="" />
+                  </div>
+                  <h3>Fruit Salad Recipe</h3>
+                  <p>
+                    A fruit salad is a refreshing and colorful dish that
+                    celebrates the natural sweetness and diversity of fruits.
+                    It's a beloved side dish, and has flavors in every
+                    delightful bite.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dish Area -->
+
+      <!-- Feedback Area -->
+      <div class="customer_feedback_area">
+        <div class="container">
+          <div class="row justify-content-center mb-50">
+            <div class="col-xl-9">
+              <div class="section_title text-center">
+                <a href="feedbackForm.html"><h3>Feedback From Customers</h3></a>
+                <p>
+                  Customer feedback is information provided by customers about
+                  their experience with a product or service. Its purpose is to
+                  reveal their level of satisfaction and help product, customer
+                  success, and marketing teams understand where there is room
+                  for improvement
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="carousel_feedback" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel_feedback"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel_feedback"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel_feedback"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel_feedback"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="single_customer d-flex">
+                  <div class="thumb">
+                    <img src="img/profile_1.png" alt="" />
+                  </div>
+                  <div class="customer_meta">
+                    <h3>Adame Nesane</h3>
+                    <span>Verified Customer</span>
+                    <p>
+                      The chicken dish at this restaurant is top-notch. The meat
+                      was tender, juicy, and well-seasoned. The portion size was
+                      generous, and it came with a side of perfectly roasted
+                      vegetables. My only suggestion would be a bit more sauce,
+                      but overall, a great meal!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single_customer d-flex">
+                  <div class="thumb">
+                    <img src="img/profile_2.png" alt="" />
+                  </div>
+                  <div class="customer_meta">
+                    <h3>Adame Nesane</h3>
+                    <span>Verified Customer</span>
+                    <p>
+                      I ordered the fruit salad, and it was an absolute delight!
+                      It was so fresh and packed with a variety of fruits. The
+                      flavors blended perfectly, and the presentation was
+                      beautiful. I appreciate the healthy option on the menu,
+                      and I'll definitely be ordering this again.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single_customer d-flex">
+                  <div class="thumb">
+                    <img src="img/profile_1.png" alt="" />
+                  </div>
+                  <div class="customer_meta">
+                    <h3>Adame Nesane</h3>
+                    <span>Chief Customer</span>
+                    <p>
+                      I can't say enough about the steak here. It was cooked to
+                      perfection, exactly how I like it. The seasoning was spot
+                      on, and the steak just melted in my mouth. The
+                      restaurant's attention to detail and quality of meat are
+                      impressive. I'll be back for more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single_customer d-flex">
+                  <div class="thumb">
+                    <img src="img/profile_2.png" alt="" />
+                  </div>
+                  <div class="customer_meta">
+                    <h3>Adame Nesane</h3>
+                    <span>Chief Customer</span>
+                    <p>
+                      I have a major sweet tooth, and this place satisfies my
+                      cravings every time. The dessert menu is a dream come
+                      true! I tried their chocolate lava cake, and it was
+                      divine. Warm, gooey, and accompanied by a scoop of vanilla
+                      ice cream. If you're a dessert lover, you can't miss this.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel_feedback"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel_feedback"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Feedback Area -->
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Welcome, Hitesh</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Welcome to our delectable world of culinary delights! <br />
+          Explore a treasure trove of mouthwatering recipes.
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Starters</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Main Course</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Desserts</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Juices & Shakes</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right_text">
+        <div class="container">
+          <div class="footer_border"></div>
+          <div class="row align-items-center">
+            <div class="col-xl-8 col-md-8">
+              <p class="copy_right">Copyright © 2023 All rights reserved</p>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+              <div class="social_links">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="ti-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-twitter-alt"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-email"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = (event) => {
+        let myAlert = document.getElementById("liveToast");
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+        setTimeout(() => {
+          bsAlert.hide();
+        }, 5000);
+      };
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -30,5 +1091,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

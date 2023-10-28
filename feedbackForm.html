@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+
+    <title>Document</title>
+  </head>
+  <body onload="setFeedbackFormBackground()">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid nav-area">
+          <a class="navbar-brand" href="#">reSSSPes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Home Page"
+              >
+                <a class="nav-link" aria-current="page" href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To About Page"
+              >
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Recepies Page"
+              >
+                <a class="nav-link" href="#">Recepie</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Chicken Recepie Page"
+                  >
+                    <a class="dropdown-item" href="Chicken-Recipes.html"
+                      >Chicken Recepie</a
+                    >
+                  </li>
+
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Fruit Salad Recepie Page"
+                  >
+                    <a class="dropdown-item" href="Fruit-Salad-Recipes.html"
+                      >Fruit Salad Recepie</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Feedback Page"
+              >
+                <a class="nav-link active" href="feedbackForm.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Search Within Document"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <form class="row g-3" id="feedbackForm">
+      <div class="col-md-6">
+        <label for="inputFirstName4" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="inputFirstName4" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputLastName4" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName4" required />
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" required />
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword4"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Address 1"
+          required
+        />
+      </div>
+
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="Apartment, studio, or floor"
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" required />
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select" required>
+          <option selected>Choose...</option>
+          <option>Arizona</option>
+          <option>California</option>
+          <option>Massachusetts</option>
+          <option>Nevada</option>
+          <option>Washington</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip" required />
+      </div>
+
+      <div class="col-md-12">
+        <label for="customRange3" class="form-label"
+          >Rate your experience out of 10</label
+        >
+        <br />
+        <input
+          type="text"
+          id="textInputRange"
+          value=""
+          class="form-control col-md-2"
+          disabled
+          style="background-color: black; color: white; display: inline-block"
+        />
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="10"
+          step="1"
+          id="customRange3"
+          onchange="updateTextInput(this.value);"
+        />
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label">Share your comments on our recipes</label>
+        <textarea
+          class="form-control"
+          aria-label="With textarea"
+          id="myFeedbackComments"
+          required
+        ></textarea>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button
+          class="btn btn-primary"
+          type="submit"
+          onclick="spinnerVisibility(); return false"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div class="col-12" id="spinnerFeedback">
+        <button class="btn btn-primary" type="button" disabled>
+          <span
+            class="spinner-border spinner-border-sm"
+            aria-hidden="true"
+          ></span>
+          <span role="status">Submitting...</span>
+        </button>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+          />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+          <path
+            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+          />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </symbol>
+      </svg>
+      <div
+        class="alert alert-success align-items-center"
+        role="alert"
+        id="alertFeedback"
+      >
+        <svg
+          class="bi flex-shrink-0 me-2"
+          role="img"
+          aria-label="Success:"
+          disabled
+        >
+          <use xlink:href="#check-circle-fill" />
+        </svg>
+        <div>
+          Thank you for your feedback. We will reach out to you shortly!
+        </div>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Starters</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Main Course</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Desserts</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-x-2 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <h3 class="footer_title">Juices & Shakes</h3>
+                <ul>
+                  <li><a href="#">Immune Support</a></li>
+                  <li><a href="#">Pantry Staples</a></li>
+                  <li><a href="#">High Protein</a></li>
+                  <li><a href="#">Vegetarian</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right_text">
+        <div class="container">
+          <div class="footer_border"></div>
+          <div class="row align-items-center">
+            <div class="col-xl-8 col-md-8">
+              <p class="copy_right">Copyright © 2023 All rights reserved</p>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+              <div class="social_links">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="ti-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-twitter-alt"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-email"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
