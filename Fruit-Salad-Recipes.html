@@ -32,7 +32,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid nav-area">
-          <a class="navbar-brand" href="#">Demo Name</a>
+          <a class="navbar-brand" href="#">reSSSPes</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -46,20 +46,36 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Home.html"
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Home Page"
+              >
+                <a class="nav-link" aria-current="page" href="Home.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To About Page"
+              >
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Recepies Page"
+              >
                 <a class="nav-link" href="#">Recepie</a>
               </li>
+
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle active"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -68,21 +84,38 @@
                 >
                   Pages
                 </a>
+
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Chicken Recepie Page"
+                  >
                     <a class="dropdown-item" href="Chicken-Recipes.html"
                       >Chicken Recepie</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="Fruit-Salad-Recipes.html"
+
+                  <li
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Go To Fruit Salad Recepie Page"
+                  >
+                    <a
+                      class="dropdown-item active"
+                      href="Fruit-Salad-Recipes.html"
                       >Fruit Salad Recepie</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li
+                class="nav-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Go To Feedback Page"
+              >
+                <a class="nav-link" href="feedbackForm.html">Feedback</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -92,7 +125,13 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Search Within Document"
+              >
                 Search
               </button>
             </form>
@@ -307,5 +346,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
